@@ -4,15 +4,8 @@ import {Ed25519Keypair} from '@mysten/sui.js/keypairs/ed25519';
 import {TransactionBlock} from "@mysten/sui.js/transactions";
 import {bcs} from "@mysten/sui.js/bcs";
 import {fromB64} from "@mysten/bcs";
+import {PACKAGE_ID, PRIVATE_KEY, PRIVATE_KEY_OWNER, PROMPTS_OBJECT_ID} from "./contracts.js";
 
-const MY_ADDRESS = "0x3d13424a38ba62a9e0155c78b44ffb717b8612e1025f3d56bd4592d57a008c5f"
-const PRIVATE_KEY = "279b4815bca2414dfad94c6f72ee3191c04c64fd8d839396ba0de669a630fcc7" // no 0x
-
-const ADDRESS_OWNER = "0xa889ea8ef488a5d34fd2691b1982954958e0730c1b8d31cca91ffb346de56b41"
-const PRIVATE_KEY_OWNER = "02e5f4af751c878fc74669a886eb00d7489dfc988a3587937d6539f1aab61224" // no 0x
-
-const PACKAGE_ID = "0xda13e0343d7608fee50e7b3c830d5c589c5649b9cd7f6e5ae017161fd0d72acb"
-const PROMPTS_OBJECT_ID = "0x05b51f2fc03125408dbb4fd649bb618d8948bed944ac0a3eaad756f5c70ea8f2"
 
 const suiClient = new SuiClient({url: getFullnodeUrl('localnet')});
 
