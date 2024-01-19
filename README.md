@@ -41,7 +41,7 @@ pnpm explorer dev
 
 Open http://localhost:3000/
 
-## Wallet
+## Wallet (clone sui repo)
 
 ```
 cp sui/apps/wallet/configs/environment/.env.defaults sui/apps/wallet/configs/environment/.env
